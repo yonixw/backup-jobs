@@ -64,3 +64,6 @@ ALL_CONFIGS="$FILTER_CONFIG $NETOWRK_CONFIG
 echo $(echo "$ALL_CONFIGS"|tr -d '\n') | xargs ./yt-dlp_linux 
 
 echo $? > yt-dlp_std_output.txt
+
+# TODO: How to detect errors with private? deleted? general error?
+#  PLID=PLAMd2RJQu7X-XUbqp_tTOQf8dIleCJUYD bash run.sh  
