@@ -1,4 +1,5 @@
 BEST_RES=${BEST_RES:-720}
+URL="https://www.youtube.com/playlist?list=$PLID"
 
 # Download the best video available but no better than $BEST_RES,
 # or the worst video if there is no video under $BEST_RES
@@ -39,6 +40,7 @@ SAVE_CONFIG="
     --write-thumbnail 
     --write-subs 
     --write-auto-subs 
+    -o \"$PLID/%(id)s/%(title)s.%(ext)s\"
     "
 
 # --skip-download 
